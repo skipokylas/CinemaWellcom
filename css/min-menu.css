@@ -1,0 +1,571 @@
+    #buttonMenu {
+        width: 100%;
+        min-height: 70px;
+        background-color: #151B27;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileMenu ul {
+        background-color: #151B27;
+        margin: 0;
+        height: 100vh;
+        display: none;
+    }
+
+    .mobileMenu li {
+        text-align: center;
+    }
+
+    .mobileMenu li:hover {
+        background-color: #ffbb00;
+    }
+
+    .mobileMenu a {
+        text-decoration: none;
+        padding: 10px 0px;
+        color: #ffffff;
+        font-size: 1.1em;
+        display: block;
+    }
+
+    #mobileLogo {
+        padding-left: 10%;
+        width: 30%;
+    }
+
+    .line1 {
+        transition: all .5s;
+        height: 5px;
+        width: 40px;
+        background-color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .line2 {
+        transition: all .5s;
+        height: 5px;
+        width: 40px;
+        background-color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .line3 {
+        transition: all .5s;
+        height: 5px;
+        width: 40px;
+        background-color: #fff;
+    }
+
+    .line4 {
+        background-color: #FFBB00;
+        transition: all .5s;
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .line6 {
+        background-color: #FFBB00;
+        transition: all .5s;
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .line5 {
+        transition: all .5s;
+        opacity: 0;
+    }
+
+    .burger_click {
+
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        padding-right: 5%;
+    }
+
+    .mark-chellenge-rb-text3,
+    .mark-chellenge-rb-text4 {
+        display: none;
+    }
+
+    .mobile-ico-top,
+    .mobile-ico-bottom {
+        display: none;
+    }
+
+    .central {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1150px) {
+        .mobileMenu {
+            display: none;
+            background-color: #151B27;
+        }
+        .mobileMenu li {
+            list-style: none;
+        }
+    }
+
+     .github-block img {
+           
+            visibility: hidden;
+          
+        }
+    @media screen and (max-width: 1150px) {
+        .desktopMenu {
+            display: none;
+        }
+
+
+        .front-headers div:nth-child(1) {
+            padding-top: 200px;
+            color: white;
+            text-align: center;
+            float: none;
+            padding-left: 0;
+        }
+        .front-headers div:nth-child(1)>span {
+            padding-right: 1%;
+            padding-left: 1%;
+        }
+        .front-headers div:nth-child(2) {
+            float: none;
+            text-align: center;
+        }
+        .front-headers div:nth-child(3) img {
+            display: none;
+        }
+        .front-headers div:nth-child(3) {
+            float: none;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .front-headers div:nth-child(4) {
+            float: none;
+        }
+
+        .video-block {
+            padding-top: 20px;
+            flex-direction: column;
+        }
+        .video-block-left,
+        .video-block-right {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        .market-challenge {
+
+            padding-bottom: 20px;
+        }
+        .market-challenge-block {
+            flex-direction: column-reverse;
+        }
+        .market-challenge-block div:nth-child(1) {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        .market-challenge-block div:nth-child(2) {
+            width: 48%;
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .market-challenge-block div:nth-child(2) img {
+            width: 320px;
+        }
+        .market-challenge-block {
+            padding: 35px 0px 0 0px;
+        }
+        .headers-hr-win-win {
+            width: 70%;
+        }
+        .win-win-platform .description {
+            width: 90%;
+        }
+
+        .github-block {
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin-top: 0px;
+        }
+        .github-block div:nth-child(1) {
+            width: 100%;
+            line-height: 1.7;
+            margin-left: 0;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .github-block div:nth-child(2) {
+            width: 100%;
+        }
+        .github-block img {
+            display: block;
+            width: 90%;
+            border-radius: 15px;
+            margin: 20px auto 0;
+            visibility: visible;
+          
+        }
+        .button-block-git {
+            padding-bottom: 60px;
+        }
+
+        .mark-chellenge-rb-text2 {
+            position: relative;
+            top: -140px;
+            left: 410px;
+            font-size: 14px;
+            width: 45%;
+            text-align: center;
+        }
+
+
+        .ico-structure .headers-content-letter-block,
+        .money,
+        .time {
+            display: none;
+        }
+
+        .letter-block {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            height: 100%;
+            padding-top: 0px;
+        }
+
+        .letter-block-right,
+        .letter-block-left {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            text-align: center;
+        }
+        .mobile-ico-top {
+            padding-top: 40px;
+            text-align: left;
+            position: relative;
+            color: #3c475c;
+            background-color: #fff;
+        }
+        .mobile-ico-top,
+        .mobile-ico-bottom {
+            display: block;
+        }
+        .mobile-ico-bottom {
+            text-align: center;
+            color: #3c475c;
+            background-color: #3C475C;
+        }
+        .money-mob,
+        .time-mob {
+            width: 100%;
+            height: 50%;
+        }
+
+        .money-mob img {
+            width: 42px;
+            margin-top: 40px;
+            margin-left: -45px;
+            margin-right: 0px;
+            float: left;
+        }
+
+        .time-mob img {
+            width: 40px;
+            margin-top: 45px;
+            margin-left: 5px;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .time-text {
+            height: 100%;
+            padding-top: 45px;
+            font-weight: 600;
+            font-size: 1em;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        .money-text {
+            height: 100%;
+            padding-top: 25px;
+            font-weight: 600;
+            font-size: 1em;
+            letter-spacing: 1px;
+            padding-bottom: 20px;
+            text-align: left;
+            padding-left: 7%;
+        }
+        .mobile-ico-bottom {
+            padding-left: 35%;
+        }
+    }
+ 
+    @media screen and (max-width: 1050px) {
+        .money-text {
+            padding-left: 8%;
+        }
+        .mark-chellenge-rb-text2 {
+            left: 380px;
+        }
+    }
+
+    @media screen and (max-width: 930px) {
+        .video-block-left,
+        .video-block-right {
+            width: 70%;
+        }
+        .form {
+            left: 19%;
+        }
+        .see-github .headers-hr {
+            width: 70%;
+        }
+        .money-text {
+            padding-left: 9%;
+        }
+    }
+
+    @media screen and (max-width: 830px) {
+        .video-block-left,
+        .video-block-right {
+            width: 80%;
+        }
+        .footer-column-items-left {
+
+            width: 50.3334%;
+        }
+        .foter-right {
+            display: none;
+        }
+        .footer-column-items-left:nth-child(3) {
+            display: none;
+        }
+        .foter-left {
+            width: 100%;
+        }
+        .hr-footer {
+            width: 90%;
+            left: 32px;
+        }
+        .form {
+            left: 15%;
+        }
+        .social-video {
+            margin-top: -2px;
+        }
+        .money-text {
+            padding-left: 10%;
+        }
+        .mobile-ico-bottom {
+            padding-left: 31%;
+        }
+        .mark-chellenge-rb-text2 {
+            left: 355px;
+        }
+    }
+
+    @media screen and (max-width: 730px) {
+        .video-block-left,
+        .video-block-right {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        .win-win-img-block img {
+            max-width: 90%;
+        }
+        .team .servises-ul {
+            padding-bottom: 20px;
+        }
+        .team .description {
+            display: none;
+        }
+        .transition-team img {
+            padding-left: 20px;
+        }
+        .form {
+            left: 9%;
+        }
+        .mark-chellenge-rb-text1 {
+            left: 240px;
+        }
+        .mark-chellenge-rb-text2 {
+            left: 320px;
+        }
+        .market-challenge {
+            padding-bottom: 30px;
+        }
+        .money-text {
+            padding-left: 11%;
+        }
+        .mobile-ico-bottom {
+            padding-left: 28%;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .mobile-ico-bottom {
+            padding-left: 22%;
+        }
+        .market-challenge-block div:nth-child(2) {
+            margin-left: 15%;
+        }
+        .mark-chellenge-rb-text1 {
+            left: 285px;
+        }
+        .form {
+
+            width: 56%;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .video-block-left,
+        .video-block-right {
+            width: 95%;
+            margin-bottom: 10px;
+        }
+        .mark-chellenge-rb-text1 {
+            display: none;
+        }
+        .mark-chellenge-rb-text2 {
+            display: none;
+        }
+        .mark-chellenge-rb-text3 {
+            display: block;
+            position: absolute;
+            top: 40px;
+            right: -65px;
+        }
+        .mark-chellenge-rb-text4 {
+            display: block;
+            position: absolute;
+            top: 150px;
+            right: -55px;
+        }
+        .mobile-ico-bottom {
+            padding-left: 19%;
+        }
+        .money-text {
+            padding-left: 12%;
+        }
+        .form {
+            width: 75%;
+            padding: 1em;
+        }
+        .front-headers div:nth-child(2) {
+            float: none;
+            text-align: right;
+            padding-right: 6%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+
+        .mobile-ico-bottom {
+            padding-left: 3%;
+        }
+        .money-text {
+            padding-left: 11%;
+        }
+        .mark-chellenge-rb-text3 {
+
+
+            right: -95px;
+        }
+        .mark-chellenge-rb-text4 {
+
+            right: -75px;
+        }
+        .front-headers div:nth-child(1) {
+            padding-top: 40%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .money-text {
+            padding-left: 12%;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+
+        .money-text {
+            padding-left: 12.5%;
+        }
+        .mark-chellenge-rb-text3 {
+
+            right: -125px;
+        }
+        .mark-chellenge-rb-text4 {
+
+            right: -105px;
+        }
+        .market-challenge-block div:nth-child(2) {
+
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .mark-chellenge-rb-text3 {
+
+            right: -140px;
+        }
+        .mark-chellenge-rb-text4 {
+
+            right: -125px;
+        }
+        .money-text,
+        .time-text {
+           text-align: center;
+           padding-left: 0;
+        }
+        .time-mob img,
+        .money-mob img {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        .mobile-ico-bottom {
+            padding-left: 0;
+        }
+        .mark-chellenge-rb-text3 {
+
+            right: -145px;
+        }
+        .mark-chellenge-rb-text4 {
+
+            right: -130px;
+        }
+        .front-headers div:nth-child(1)>span {
+            background-color: transparent;
+        }
+        .front-headers div:nth-child(1) {
+            width: 250px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 366px) {
+        
+         {
+            text-align: center;
+        }
+    }
