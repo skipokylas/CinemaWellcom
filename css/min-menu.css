@@ -109,11 +109,11 @@
         }
     }
 
-     .github-block img {
-           
-            visibility: hidden;
-          
-        }
+    .github-block img {
+
+        visibility: hidden;
+    }
+
     @media screen and (max-width: 1150px) {
         .desktopMenu {
             display: none;
@@ -216,7 +216,6 @@
             border-radius: 15px;
             margin: 20px auto 0;
             visibility: visible;
-          
         }
         .button-block-git {
             padding-bottom: 60px;
@@ -314,7 +313,7 @@
             padding-left: 35%;
         }
     }
- 
+
     @media screen and (max-width: 1050px) {
         .money-text {
             padding-left: 8%;
@@ -431,6 +430,9 @@
 
             width: 56%;
         }
+        .mobDescription {
+            width: 90%;
+        }
     }
 
     @media screen and (max-width: 550px) {
@@ -449,13 +451,13 @@
             display: block;
             position: absolute;
             top: 40px;
-            right: -65px;
+            left: 260px;
         }
         .mark-chellenge-rb-text4 {
             display: block;
             position: absolute;
             top: 150px;
-            right: -55px;
+            left: 260px;
         }
         .mobile-ico-bottom {
             padding-left: 19%;
@@ -482,78 +484,61 @@
         .money-text {
             padding-left: 11%;
         }
-        .mark-chellenge-rb-text3 {
 
-
-            right: -95px;
-        }
-        .mark-chellenge-rb-text4 {
-
-            right: -75px;
-        }
         .front-headers div:nth-child(1) {
             padding-top: 40%;
         }
-    }
-
-    @media screen and (max-width: 480px) {
-
+        .time-mob img {
+            float: none;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .money-mob img {
+            float: none;
+            margin-left: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .time-text {
+            height: 100%;
+            padding-top: 30px;
+            font-weight: 600;
+            font-size: 1em;
+            letter-spacing: 1px;
+            text-align: center;
+        }
         .money-text {
-            padding-left: 12%;
+             padding-left: 0;
+             text-align: center; 
         }
     }
+
+  
 
     @media screen and (max-width: 450px) {
 
-        .money-text {
-            padding-left: 12.5%;
-        }
-        .mark-chellenge-rb-text3 {
+       
 
-            right: -125px;
-        }
-        .mark-chellenge-rb-text4 {
-
-            right: -105px;
-        }
         .market-challenge-block div:nth-child(2) {
 
             margin-left: 0;
         }
     }
 
-    @media screen and (max-width: 400px) {
-        .mark-chellenge-rb-text3 {
-
-            right: -140px;
-        }
-        .mark-chellenge-rb-text4 {
-
-            right: -125px;
-        }
-        .money-text,
-        .time-text {
-           text-align: center;
-           padding-left: 0;
-        }
-        .time-mob img,
-        .money-mob img {
-            display: none;
-        }
-    }
+   
 
     @media screen and (max-width: 380px) {
         .mobile-ico-bottom {
             padding-left: 0;
         }
-        .mark-chellenge-rb-text3 {
+       /* .mark-chellenge-rb-text3 {
 
             right: -145px;
         }
         .mark-chellenge-rb-text4 {
 
             right: -130px;
-        }
+        }*/
         .front-headers div:nth-child(1)>span {
             background-color: transparent;
         }
@@ -564,8 +549,6 @@
     }
 
     @media screen and (max-width: 366px) {
+
         
-         {
-            text-align: center;
-        }
     }

@@ -1109,6 +1109,13 @@ ul.servises-ul li .img-servises {
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
+.seePrototype{
+    /*background-color:#ffbb00; */
+        width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid  #ffbb00; 
+}
 
 @media screen and (max-width: 700px) {
     .slick-prev {
