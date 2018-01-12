@@ -154,6 +154,7 @@ nav ul li a {
 .menu ul li a:hover {
     background-color: #ffbb00;
     border-radius: 10px;
+    border:
 }
 
 nav ul ul {
@@ -294,9 +295,9 @@ nav ul ul ul {
 .step1 {
     position: absolute;
     top: 55%;
-    left: 21%;
+    left: 23%;
     height: 200px;
-    width: 230px;
+    width: 200px;
     text-align: center;
 }
 

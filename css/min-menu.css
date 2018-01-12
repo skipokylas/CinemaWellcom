@@ -531,14 +531,8 @@
 
             right: -125px;
         }
-        .money-text,
-        .time-text {
-           text-align: center;
-           padding-left: 0;
-        }
-        .time-mob img,
-        .money-mob img {
-            display: none;
+        .money-text {
+            padding-left: 13%;
         }
     }
 
@@ -564,8 +558,11 @@
     }
 
     @media screen and (max-width: 366px) {
-        
-         {
+        .time-mob img,
+        .money-mob img {
+            display: none;
+        }
+        .time-text {
             text-align: center;
         }
     }
