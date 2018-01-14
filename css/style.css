@@ -2,7 +2,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     padding: 0;
-
 }
 
 ul {
@@ -101,6 +100,7 @@ nav ul li {
     background-color: #616a7b4d;
     border-color: #616a7b;
 }
+
 
 
 
@@ -596,6 +596,7 @@ nav ul ul ul {
 
 
 
+
 /*** transition image START***/
 
 .transition-team {
@@ -647,6 +648,7 @@ nav ul ul ul {
 
 
 
+
 /*** transition image  END***/
 
 .content-values .headers-content-letter-block {
@@ -682,6 +684,7 @@ nav ul ul ul {
 
 
 
+
 /**contact us logo START**/
 
 .img-servises-festival img {
@@ -705,6 +708,7 @@ ul.servises-ul {
     text-align: center;
     padding-top: 30px;
 }
+
 
 
 
@@ -1044,20 +1048,22 @@ ul.servises-ul li .img-servises {
 
 .boxa {
     text-align: center;
-    
+
     color: #3c475c;
-   /* font-size: 0.98em;*/
+    /* font-size: 0.98em;*/
     font-weight: 500;
 }
 
-.boxa a{
+.boxa a {
     text-decoration: none;
     font-weight: 600;
 }
-.boxa p{
+
+.boxa p {
     line-height: 1.8;
     font-size: 16px !important;
 }
+
 
 /*карусель*/
 
@@ -1102,19 +1108,23 @@ ul.servises-ul li .img-servises {
 }
 
 .boxa .filter-gray {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .boxa .filter-gray:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
-.seePrototype{
+
+.seePrototype {
     /*background-color:#ffbb00; */
-        width: 60%;
+    width: 60%;
     margin: 0 auto;
     border-radius: 15px;
-    border: 1px solid  #ffbb00; 
+    border: 1px solid #ffbb00;
 }
 
 @media screen and (max-width: 700px) {
@@ -1125,6 +1135,7 @@ ul.servises-ul li .img-servises {
         right: 25px !important;
     }
 }
+
 
 
 
@@ -1146,4 +1157,43 @@ ul.servises-ul li .img-servises {
     .front-section {
         height: 1100px;
     }
+}
+
+.subscribeBox {
+    margin: 0 auto;
+    width: 370px;
+    padding-top: 70px;
+}
+
+.subscribeBox form {
+    display: flex;
+}
+
+.subscribeBox input:last-child {
+    color: #3c475c;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffbb00;
+    border-radius: 0 5px 5px 0;
+    line-height: 6px;
+    height: 35px;
+}
+
+.subscribeBox input:last-child:hover {
+    background: #151b27 !important;
+   
+    border: 1px solid #ffbb00 !important;
+    color: #fff !important;
+}
+
+.subscribeBox input:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    background-color: rgba(28,28,28,0.9);
+}
+
+.subscribeBox input {
+    outline: none;
 }

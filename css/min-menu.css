@@ -115,6 +115,9 @@
     }
 
     @media screen and (max-width: 1150px) {
+        .ico-structure .limit {
+            max-width: 1300px;
+        }
         .desktopMenu {
             display: none;
         }
@@ -508,37 +511,36 @@
             text-align: center;
         }
         .money-text {
-             padding-left: 0;
-             text-align: center; 
+            padding-left: 0;
+            text-align: center;
         }
+        .subscribeBox {        
+           width: 360px;
+         }
     }
 
-  
+
 
     @media screen and (max-width: 450px) {
 
-       
+
 
         .market-challenge-block div:nth-child(2) {
 
             margin-left: 0;
         }
+         .subscribeBox {        
+           width: 340px;
+         }
     }
 
-   
+
 
     @media screen and (max-width: 380px) {
         .mobile-ico-bottom {
             padding-left: 0;
         }
-       /* .mark-chellenge-rb-text3 {
 
-            right: -145px;
-        }
-        .mark-chellenge-rb-text4 {
-
-            right: -130px;
-        }*/
         .front-headers div:nth-child(1)>span {
             background-color: transparent;
         }
@@ -546,9 +548,9 @@
             width: 250px;
             margin: 0 auto;
         }
+        .subscribeBox {        
+           width: 320px;
+         }
     }
 
-    @media screen and (max-width: 366px) {
-
-        
-    }
+    @media screen and (max-width: 366px) {}
