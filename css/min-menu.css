@@ -66,7 +66,7 @@
     .line6 {
         background-color: #FFBB00;
         transition: all .5s;
-        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -5px);
     }
 
     .line5 {
@@ -121,10 +121,17 @@
         .desktopMenu {
             display: none;
         }
+        .wallet-fingerText-block {
+            padding-top: 90px;
+        }
 
-
+        .rating {
+            margin-left: 5%;
+            top: 500px;
+        }
         .front-headers div:nth-child(1) {
-            padding-top: 200px;
+
+            padding-top: 90px;
             color: white;
             text-align: center;
             float: none;
@@ -477,6 +484,24 @@
             text-align: right;
             padding-right: 6%;
         }
+        .front-headers div:nth-child(1) {
+            padding-top: 50px;
+        }
+        .wallet-fingerText-block {
+            padding-top: 40px;
+        }
+        .rating {
+            display: flex;
+            flex-direction: column-reverse;
+            top: 620px;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            align-items: center;
+        }
+        .rating img{
+            width: 200px;
+        }
     }
 
     @media screen and (max-width: 500px) {
@@ -488,9 +513,9 @@
             padding-left: 11%;
         }
 
-        .front-headers div:nth-child(1) {
+        /* .front-headers div:nth-child(1) {
             padding-top: 40%;
-        }
+        }*/
         .time-mob img {
             float: none;
             margin-left: 0px;
@@ -514,9 +539,13 @@
             padding-left: 0;
             text-align: center;
         }
-        .subscribeBox {        
-           width: 360px;
-         }
+        .subscribeBox {
+            width: 360px;
+        }
+        .subscribeBox input:last-child {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
 
@@ -529,9 +558,9 @@
 
             margin-left: 0;
         }
-         .subscribeBox {        
-           width: 340px;
-         }
+        .subscribeBox {
+            width: 340px;
+        }
     }
 
 
@@ -548,9 +577,9 @@
             width: 250px;
             margin: 0 auto;
         }
-        .subscribeBox {        
-           width: 320px;
-         }
+        .subscribeBox {
+            width: 320px;
+        }
     }
 
     @media screen and (max-width: 366px) {}

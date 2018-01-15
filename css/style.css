@@ -101,7 +101,29 @@ nav ul li {
     border-color: #616a7b;
 }
 
+#fingerDesk {
+    width: 50px;
+    animation: horizontal_3305 2.1s linear infinite;
+    transform-origin: 40% 40%;
+}
 
+#fingerDesk-mob {
+    position: absolute;
+    animation: horizontal_3305 2.1s linear infinite;
+    width: 50px;
+}
+
+@keyframes horizontal_3305 {
+    0% {
+        transform: translate(0, 0)
+    }
+    50% {
+        transform: translate(30px, 0)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
 
 
 
@@ -209,6 +231,10 @@ nav ul ul ul {
 
 .logo img {
     padding-right: 30px;
+}
+
+.logo a {
+    text-decoration: none;
 }
 
 .follow-buttons {
@@ -597,6 +623,8 @@ nav ul ul ul {
 
 
 
+
+
 /*** transition image START***/
 
 .transition-team {
@@ -649,6 +677,8 @@ nav ul ul ul {
 
 
 
+
+
 /*** transition image  END***/
 
 .content-values .headers-content-letter-block {
@@ -685,6 +715,8 @@ nav ul ul ul {
 
 
 
+
+
 /**contact us logo START**/
 
 .img-servises-festival img {
@@ -708,6 +740,8 @@ ul.servises-ul {
     text-align: center;
     padding-top: 30px;
 }
+
+
 
 
 
@@ -768,10 +802,27 @@ ul.servises-ul li .img-servises {
     margin-top: 20px;
 }
 
-.front-headers {}
+.wallet-fingerText-block {
+    padding-top: 200px;
+    color: #999;
+    text-align: center;
+}
+
+.wallet-fingerText-block span {
+    margin: 0 7px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(28, 28, 28, 0.9);
+    padding: 5px;
+    border: #ffbb00 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffbb00;
+    -webkit-box-shadow: 0 0 5px #ffbb00;
+    -moz-box-shadow: 0 0 5px #ffbb00;
+}
 
 .front-headers div:nth-child(1) {
-    padding-top: 200px;
+    padding-top: 50px;
     padding-left: 55%;
     color: white;
     float: right;
@@ -811,6 +862,17 @@ ul.servises-ul li .img-servises {
 
 .front-headers div:nth-child(4) {
     float: right;
+}
+
+.rating {
+    position: absolute;
+    top: 160px;
+    /*fingerDesk*/
+    max-width: 350px;
+}
+
+.rating img {
+    border-radius: 10px;
 }
 
 .social-video {
@@ -1065,6 +1127,8 @@ ul.servises-ul li .img-servises {
 }
 
 
+
+
 /*карусель*/
 
 .slider {
@@ -1139,6 +1203,8 @@ ul.servises-ul li .img-servises {
 
 
 
+
+
 /*карусель*/
 
 @media screen and (min-width: 1350px) {
@@ -1182,7 +1248,7 @@ ul.servises-ul li .img-servises {
 
 .subscribeBox input:last-child:hover {
     background: #151b27 !important;
-   
+
     border: 1px solid #ffbb00 !important;
     color: #fff !important;
 }
@@ -1191,7 +1257,7 @@ ul.servises-ul li .img-servises {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 10px;
-    background-color: rgba(28,28,28,0.9);
+    background-color: rgba(28, 28, 28, 0.9);
 }
 
 .subscribeBox input {
