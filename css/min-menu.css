@@ -268,6 +268,7 @@
             position: relative;
             color: #3c475c;
             background-color: #fff;
+            min-height: 340px;
         }
         .mobile-ico-top,
         .mobile-ico-bottom {
@@ -277,6 +278,7 @@
             text-align: center;
             color: #3c475c;
             background-color: #3C475C;
+            min-height: 180px;
         }
         .money-mob,
         .time-mob {
@@ -499,8 +501,12 @@
             margin: 0;
             align-items: center;
         }
-        .rating img{
+        .rating img {
             width: 200px;
+        }
+        #fingerDesk-mob {
+
+            top: 0.39%;
         }
     }
 

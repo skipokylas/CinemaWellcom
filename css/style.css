@@ -102,7 +102,7 @@ nav ul li {
 }
 
 #fingerDesk {
-    width: 50px;
+   /* width: 50px;*/
     animation: horizontal_3305 2.1s linear infinite;
     transform-origin: 40% 40%;
 }
@@ -110,7 +110,8 @@ nav ul li {
 #fingerDesk-mob {
     position: absolute;
     animation: horizontal_3305 2.1s linear infinite;
-    width: 50px;
+   left: 13%;
+    top: 0.43%;
 }
 
 @keyframes horizontal_3305 {
@@ -286,6 +287,7 @@ nav ul ul ul {
 
 .padding-botom60px {
     padding-bottom: 50px;
+    min-height: 100px;
 }
 
 .headers-grey {
@@ -803,7 +805,7 @@ ul.servises-ul li .img-servises {
 }
 
 .wallet-fingerText-block {
-    padding-top: 200px;
+    padding-top: 150px;
     color: #999;
     text-align: center;
 }
@@ -822,7 +824,7 @@ ul.servises-ul li .img-servises {
 }
 
 .front-headers div:nth-child(1) {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 55%;
     color: white;
     float: right;
@@ -1244,6 +1246,7 @@ ul.servises-ul li .img-servises {
     border-radius: 0 5px 5px 0;
     line-height: 6px;
     height: 35px;
+    padding: 0;
 }
 
 .subscribeBox input:last-child:hover {
@@ -1263,3 +1266,4 @@ ul.servises-ul li .img-servises {
 .subscribeBox input {
     outline: none;
 }
+
