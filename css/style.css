@@ -1024,6 +1024,7 @@ ul.servises-ul li .img-servises {
     position: relative;
     background-color: #3c475c;
     padding-top: 60px;
+    border-top: 2px solid  #edf2f7;
 }
 
 .win-win-img-block {
