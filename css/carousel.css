@@ -539,7 +539,7 @@
 .customNavigation {
   margin-top: 5px;
   margin-right: 11px;
-  text-align: right;
+  text-align: center;
 }
 
 .customNavigation .btn {
@@ -547,24 +547,25 @@
   display: inline-block;
   overflow: visible;
   margin: -1.9px;
-  padding: 0.8em 1.1em;
+  padding: 0.8em 3em;
   border: 0;
   box-shadow: none;
   color: #fff;
   text-transform: uppercase;
   text-shadow: none;
   font-size: 20px;
-  cursor: crosshair;
+  cursor: pointer;
   -webkit-transition: all .1s ease-in 0s;
   -moz-transition: all .1s ease-in 0s;
   -o-transition: all .1s ease-in 0s;
   transition-property: all .1s ease-in 0s;
   -webkit-font-smoothing: antialiased;
-  background: #333;
+  /*background: #333;*/
 }
 
 .customNavigation .btn:hover {
-  background: #222;
+  background: #fb0;
+  border-radius: 10px;
 }
 
 .hoverfx {
