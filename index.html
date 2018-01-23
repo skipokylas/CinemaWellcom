@@ -44,7 +44,7 @@
 <body>
     <script>
     $(function() {
-       
+
         var element = $(".line16");
         $(window).scroll(function() {
             if ($(window).scrollTop() > 6200) {
@@ -146,22 +146,24 @@
                     <a href="https://cointelegraph.com/ico-calendar/cinemawellcom" target="_blank"><img src="img/coinTel.png"></a>
                 </div>
             </div>
-            <div id="overlay">
-                <div class="popup">
-                    <img src="img/icon-close.png" alt="close" class="close">
-                    <form >
+           <!--  <div > -->
+              <!--   <div class="popup"> -->
+                   
+                    <form id="overlay">
+                         
                         <div class="form shadow-3">
+                            <img src="img/icon-close.png" alt="close" class="close">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your name" id="name" name="name" required size="45" pattern="[a-z]{4,8}">
+                                <input type="text" class="form-control" placeholder="Your name" id="name" name="name" required size="45" >
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email" id="email" name="name" required size="45" pattern="[a-z]{4,8}">
+                                <input type="text" class="form-control" placeholder="Email" id="email" name="name" required size="45" >
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Ethereum Wallet Address" id="wallet" name="name" required size="45" pattern="[a-z]{4,8}">
+                                <input type="text" class="form-control" placeholder="Ethereum Wallet Address" id="wallet" name="name" required size="45" >
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Amount" id="amount" name="name" required size="45" pattern="[a-z]{4,8}">
+                                <input type="text" class="form-control" placeholder="Amount" id="amount" name="name" required size="45" >
                             </div>
                             <div style="padding-top: 25px;">
                                 <span class="term-cond"><a href="http://cinemawell.com/ico/Terms-CinemaWell.com.pdf" target="_blank">Read terms and conditions</a></span>
@@ -170,39 +172,14 @@
                                 <input type="checkbox" class="custom-check" id="terms" required>
                                 <label for="terms">I accept terms and conditions.</label>
                             </div>
-
+                           <!--   pattern="[a-z]{4,40} -->
                             <button type="submit" id="contact-send2" class="btn btn-primary btn-lg btn-block" >Submit & Pay</button><br><br>
                               <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN" id="hidepaypal"><img src="img/pp-logo-100px.png" alt="paypal"></a>
                         </div>
                     </form>
-                    <!--  <form>
-                        <div class="form-block">
-                            <fieldset>
-                               
-                            </fieldset>
-                            <span class="validity"></span>
-                            <p>Usernames must be lowercase and 4-8 characters in length.</p>
-                            <fieldset>
-                              
-                            </fieldset>
-                            <span class="validity"></span>
-                            <p>Usernames must be lowercase and 4-8 characters in length.</p>
-                            <fieldset>
-                              
-                            </fieldset>
-                            <span class="validity"></span>
-                            <p>Usernames must be lowercase and 4-8 characters in length.</p>
-                            <fieldset>
-                               
-                            </fieldset <span class="validity"></span>
-                            <p>Usernames must be lowercase and 4-8 characters in length.</p>
-                        </div>
-                        <div>
-                            <button>Submit & Pay</button>
-                        </div>
-                    </form> -->
-                </div>
-            </div>
+                   
+               <!--  </div>
+            </div> -->
         </section>
         <section class="social-video">
             <div class="limit">
@@ -1157,7 +1134,7 @@
                     </li>
                 </ul>
                 <!-- *********************************contact-form STRART**********************************  -->
-                <form action="https://formspree.io/sp@cinemawell.com" method="POST">
+                <form action="https://formspree.io/sp@cinemawell.com" method="POST" style="text-align: center;">
                     <div class="form shadow-3">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Name" id="contact-name" required />

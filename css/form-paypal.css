@@ -4,20 +4,21 @@
     left: 0;
     display: none;
     width: 100%;
-    height: 100%;
+   /* height: 100%;*/
     background: rgba(0, 0, 0, 0.65);
     z-index: 999;
     -webkit-animation: fade .6s;
     -moz-animation: fade .6s;
     animation: fade .6s;
     overflow: auto;
+    text-align: center;
 }
 
 
 
 /* модальный блок */
 
-.popup {
+/*.popup {
     top: 5%;
     left: 0;
     right: 0;
@@ -44,7 +45,7 @@
     -webkit-animation: fade .6s;
     -moz-animation: fade .6s;
     animation: fade .6s;
-}
+}*/
 
 
 
@@ -69,15 +70,8 @@
     outline: none;
 }
 
-.popup fieldset {
-    border: medium none !important;
-    margin: 0 auto;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
 
-.popup .form {
+#overlay .form {
 
     margin: auto;
     background: white;
@@ -88,14 +82,14 @@
     padding-top: 4em;
     position: relative;
     z-index: 1;
-    left: 5%;
+   /* left: 5%;*/
 }
 
-.popup .shadow-3 {
+#overlay .shadow-3 {
     box-shadow: none;
 }
 
-.popup .btn-primary {
+#overlay .btn-primary {
     width: 40%;
 }
 

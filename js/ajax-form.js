@@ -1,5 +1,5 @@
 $(function() {
-     $("#hidepaypal").css("display", "none");
+    $("#hidepaypal").css("display", "none");
     $('.popup button[type=submit]').click(sendForm);
 })
 
