@@ -1,5 +1,5 @@
 $(function() {
-    $('#hidepaypal').style.visibility = 'hidden';
+    $("#block").css("display", "none;");
     $('.popup button[type=submit]').click(sendForm);
 })
 
@@ -34,8 +34,7 @@ function sendForm(e) {
 
                 $('form')[0].reset();
                
-                $('#hidepaypal').style.visibility = 'visible';
-                $('#contact-send2').style.display = 'none';
+                $("#block").css("display", "block;");
                  alert("Thank you");
                 
             })
