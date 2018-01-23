@@ -8,7 +8,7 @@
 
 // });
 $(document).ready(function(){
-    $("li").click(function(){
+    $("#mobileMenu li").click(function(){
         $("#mobileMenu").slideToggle("slow");
          $(".burger_menu_block_off").toggleClass("burger_menu_block_on");
             $(".line1").toggleClass("line4");
