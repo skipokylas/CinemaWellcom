@@ -34,7 +34,7 @@ function sendForm(e) {
 
                 $('form')[0].reset();
                
-                $("#block").css("hidepaypal", "block;");
+                $("#hidepaypal").css("display", "block;");
                  alert("Thank you");
                 
             })
