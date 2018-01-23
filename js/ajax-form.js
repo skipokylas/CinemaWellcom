@@ -32,9 +32,10 @@ function sendForm(e) {
             .done(function() {
 
                 $('form')[0].reset();
-                alert("Thank you");
-                $('#hidepaypal').style.display = 'block';
+               
+                $('#hidepaypal').style.visibility = 'visible';
                 $('#contact-send2').style.display = 'none';
+                 alert("Thank you");
                 
             })
             .fail(function(e) {
