@@ -82,7 +82,7 @@
     padding-top: 4em;
     position: relative;
     z-index: 1;
-   /* left: 5%;*/
+    top: 20px;
 }
 
 #overlay .shadow-3 {

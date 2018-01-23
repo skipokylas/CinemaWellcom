@@ -345,9 +345,7 @@
         .video-block-right {
             width: 70%;
         }
-        .form {
-            left: 19%;
-        }
+       
         .see-github .headers-hr {
             width: 70%;
         }
@@ -378,9 +376,7 @@
             width: 90%;
             left: 32px;
         }
-        .form {
-            left: 15%;
-        }
+        
         .social-video {
             margin-top: -2px;
         }
@@ -413,9 +409,7 @@
         .transition-team img {
             padding-left: 20px;
         }
-        .form {
-            left: 9%;
-        }
+        
         .mark-chellenge-rb-text1 {
             left: 240px;
         }
@@ -485,6 +479,11 @@
         .form {
             width: 75%;
             padding: 1em;
+        }
+
+       #overlay .form {
+            width: 75%;
+            padding: 1em !important;
         }
         .front-headers div:nth-child(2) {
             float: none;

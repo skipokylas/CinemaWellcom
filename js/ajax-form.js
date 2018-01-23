@@ -1,6 +1,6 @@
 $(function() {
     $("#hidepaypal").css("display", "none");
-    $('.popup button[type=submit]').click(sendForm);
+    $('#overlay button[type=submit]').click(sendForm);
 })
 
 
@@ -40,10 +40,7 @@ function sendForm(e) {
                 
             })
             .fail(function(e) {
-                alert("sorry");
-                    $("#hidepaypal").css("display", "block");
-                $("#contact-send2").css("display", "none");
-                
+                alert("incorrect data");                            
             });
     }
 }
