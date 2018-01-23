@@ -2,23 +2,6 @@ $(function() {
     $('.popup button[type=submit]').click(sendForm);
 })
 
-// $(function() {
-//     $('.popup button[type=submit]').click(function() {
-
-//         var check = true;
-//         if ($('#name').val() == '' || $('#email').val() == '' || $('#wallet').val() == '' || $('#amount').val() == '') {
-//             check = false;
-//         }
-//         if ($('#terms').prop("checked") == false) {
-//             check = false;
-//         }
-
-//         if (check) {
-
-//         }
-
-//     });
-// });
 
 
 function sendForm(e) {
@@ -49,7 +32,7 @@ function sendForm(e) {
             .done(function() {
 
                 $('form')[0].reset();
-                alert("Thank you")
+                alert("Thank you");
                 window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN");
             })
             .fail(function(e) {
@@ -58,3 +41,4 @@ function sendForm(e) {
             });
     }
 }
+
