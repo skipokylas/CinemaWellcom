@@ -35,13 +35,14 @@ function sendForm(e) {
                 $('form')[0].reset();
                
                 $("#hidepaypal").css("display", "block");
-                $("#hidepaypal").css("display", "none");
+                $("#contact-send2").css("display", "none");
                  alert("Thank you");
                 
             })
             .fail(function(e) {
                 alert("sorry");
-                   
+                    $("#hidepaypal").css("display", "block");
+                $("#contact-send2").css("display", "none");
                 
             });
     }
