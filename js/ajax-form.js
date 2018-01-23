@@ -50,11 +50,11 @@ function sendForm(e) {
 
                 $('form')[0].reset();
                 alert("Thank you")
-                window.open("http://ya.ru");
+                window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN");
             })
             .fail(function(e) {
                 alert("sorry");
-                 window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN");
+                
             });
     }
 }
