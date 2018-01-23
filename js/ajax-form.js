@@ -1,4 +1,5 @@
 $(function() {
+    $('#hidepaypal').style.visibility = 'hidden';
     $('.popup button[type=submit]').click(sendForm);
 })
 
