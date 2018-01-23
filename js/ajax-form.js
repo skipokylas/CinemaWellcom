@@ -7,16 +7,16 @@ $(function() {
 function sendForm(e) {
     e.preventDefault();
 
-    // var check = true;
-    // if ($('#name').val() == '' || $('#email').val() == '' || $('#wallet').val() == '' || $('#amount').val() == '') {
-    //     check = false;
-    //      alert("empty field");
-    // }
-    // if ($('#terms').prop("checked") == false) {
-    //     check = false;
-    //      alert("accept terms and conditions.");
-    // }
-    // if (check) {
+    var check = true;
+    if ($('#name').val() == '' || $('#email').val() == '' || $('#wallet').val() == '' || $('#amount').val() == '') {
+        check = false;
+         alert("empty field");
+    }
+    if ($('#terms').prop("checked") == false) {
+        check = false;
+         alert("accept terms and conditions.");
+    }
+    if (check) {
 
         $.ajax({
                 url: "https://formspree.io/skipokylas@gmail.com",
@@ -33,12 +33,14 @@ function sendForm(e) {
 
                 $('form')[0].reset();
                 alert("Thank you");
-                window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN");
+                $('#hidepaypal').style.display = 'block';
+                $('#contact-send2').style.display = 'none';
+                
             })
             .fail(function(e) {
                 alert("sorry");
                 
             });
-    // }
+    }
 }
 
