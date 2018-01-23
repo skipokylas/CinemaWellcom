@@ -1,5 +1,5 @@
 $(function() {
-    $("#block").css("display", "none;");
+    $("#hidepaypal").css("display", "none;");
     $('.popup button[type=submit]').click(sendForm);
 })
 
@@ -34,7 +34,7 @@ function sendForm(e) {
 
                 $('form')[0].reset();
                
-                $("#block").css("display", "block;");
+                $("#block").css("hidepaypal", "block;");
                  alert("Thank you");
                 
             })
