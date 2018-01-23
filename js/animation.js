@@ -1,4 +1,5 @@
 $(document).ready(function() {
+       $("#hidepaypal").css("display", "none;");
     $('a[href^="#"]').click(function() {
         //Сохраняем значение атрибута href в переменной:
         var target = $(this).attr('href');

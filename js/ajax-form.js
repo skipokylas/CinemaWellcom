@@ -1,5 +1,5 @@
 $(function() {
-    $("#hidepaypal").css("display", "none;");
+     $("#hidepaypal").css("display", "none");
     $('.popup button[type=submit]').click(sendForm);
 })
 
@@ -34,12 +34,14 @@ function sendForm(e) {
 
                 $('form')[0].reset();
                
-                $("#hidepaypal").css("display", "block;");
+                $("#hidepaypal").css("display", "block");
+                $("#hidepaypal").css("display", "none");
                  alert("Thank you");
                 
             })
             .fail(function(e) {
                 alert("sorry");
+                   
                 
             });
     }
