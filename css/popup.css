@@ -206,7 +206,8 @@ input[type="button"].icon:before,
 }
 
 #submit {
-  
+    width: 50%;
+    margin-top: 50px;
     background: #ffbb00;
     color: #fff !important;
     border-color: #fff !important;
@@ -268,7 +269,9 @@ input[type="button"].icon:before,
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-
+.cd-popup-container .submit{
+ /* width: 50%;*/
+}
 .cd-popup-container p {
     margin: 0;
     padding: 1em 1em;
@@ -446,10 +449,10 @@ label:hover {
 .contact-form .submit {
     display: block !important;
     overflow: hidden !important;
-    padding: 23px !important;
+   /* padding: 23px !important;*/
    
-    width: 50%;
-    float: right;
+   /* width: 50%;*/
+    /*float: right;*/
 }
 
 .contact-form .submit .user-message {

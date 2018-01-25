@@ -53,9 +53,9 @@
         });
     });
     // redirect
-    // if  (window.location.href != "http://cinemawell.com/ico/"){
-    //   window.location.href = "http://cinemawell.com/ico/";
-    // }
+    if  (window.location.href != "http://cinemawell.com/ico/"){
+      window.location.href = "http://cinemawell.com/ico/";
+    }
     </script>
     <div class="main-div">
         <nav class="desktopMenu">
@@ -121,17 +121,23 @@
                     <a href="index.html">EN</a>
                     <a href="index-fr.html">FR</a>
                     <a href="index-ru.html">RU</a>
+                    <a href="white-paper-fe.pdf" target="_blank">DE</a>
                 </div>
-                <section>
-                    <span>Payment address: 0xe07e687dc4b244d574f37490948c7f4aa921d958 <br> <b style="color: yellow; text-align: left;">Our pre-ICO is LIVE!!! </b> </span>
-                </section>
+                  <div class="lang-block-row2">
+                    <a href="white-paper-spa.pdf" target="_blank">ES</a>
+                    <a href="white-paper-hin.pdf" target="_blank">हिन्दी</a>
+                    <a href="white-paper-ch.pdf" target="_blank">中國</a>
+                </div>
+              
+                    <span>Payment address: 0xe07e687dc4b244d574f37490948c7f4aa921d958 <br> <b style="color: yellow; text-align: left;">ICO starts February 1, 2018 at 8 am EST!!! </b> </span>
+              
             </div>
             <div class="instruction-wallet">
                 <img src="img/paypal.png" id='paypal'>
                 <a href="Step-by-step-instructions-to-purchase-Applause-Cash-APLC.pdf" target="_blank"><span>instruction</span></a>
             </div>
             <div class="front-headers limit">
-                <div class="attention animation-element slide-left testimonial"><span class="bold">Pre-Sale lasts<span class="headers-orange bold"> until January 24, 2018, 11:59 PM</span></span>
+                <div class="attention animation-element slide-left testimonial"><span class="bold">Sale starts<span class="headers-orange bold"> February 1, 2018, at 8 am EST</span></span>
                 </div>
                 <div class="animation-element slide-left testimonial"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>SOCIAL NETWORK
                     <br> OF ONLINE CINEMAS</div>
@@ -166,7 +172,7 @@
                     <div style="padding-top: 25px;">
                         <span class="term-cond"><a href="http://cinemawell.com/ico/Terms-CinemaWell.com.pdf" target="_blank">Read terms and conditions</a></span>
                     </div>
-                    <div class="form-group" style="padding-top: 50px; padding-bottom: 30px;">
+                    <div class="form-group" style="padding-top: 50px; padding-bottom: 30px;" id="terms-chek">
                         <input type="checkbox" class="custom-check" id="terms" required>
                         <label for="terms">I accept terms and conditions.</label>
                     </div>
@@ -174,10 +180,11 @@
                     <button type="submit" id="contact-send2" class="btn btn-primary btn-lg btn-block">Submit & Pay</button>
                     <br>
                     <br>
-                   
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN" id="hidepaypal">
+                    <div id ="button-paypal">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN" id="hidepaypal" target="_blank">
                               <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" alt="Buy now with PayPal" />
                               </a>
+                    </div>
                 </div>
             </form>
             <!--  </div>
@@ -1219,7 +1226,7 @@
         <img class="call-to-action" id="contact" src="img/ph.ico" alt="phone">
         <!-- pop ap window************************************************************************-->
         <div class="cd-popup contact" role="alert">
-            <form id="contactform" class="contact-form" action="https://formspree.io/sp@cinemawell.com" method="POST">
+         <form id="contactform" class="contact-form" action="https://formspree.io/skipokylas@gmail.com" method="POST">
                 <div class="cd-popup-container" style="">
                     <p style="">
                         <a href="" class="cd-popup-close cd-close-button">
@@ -1233,12 +1240,12 @@
                         Please,allow us couple hours due to high load of calls during pre-ICO and ICO.
                     </p>
                     <div class="name">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required/>
+                      
+                        <input type="text" id="name" name="name" required placeholder="Name"/>
                     </div>
                     <div class="email">
-                        <label for="email">Phone number</label>
-                        <input type="text" id="email" name="message" />
+                       
+                        <input type="text" id="email" name="message" placeholder="Country code and Phone number" required/>
                     </div>
                     <br>
                     <div style="text-align:left  margin-left: 20px; ">

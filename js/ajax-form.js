@@ -20,7 +20,7 @@ function sendForm(e) {
     if (check) {
 
         $.ajax({
-                url: "https://formspree.io/skipokylas@gmail.com",
+                url: "https://formspree.io/info@cinemawell.com",
                 method: "POST",
                 data: {
                     name: $('#name').val(),
@@ -36,11 +36,15 @@ function sendForm(e) {
                
                 $("#hidepaypal").css("display", "block");
                 $("#contact-send2").css("display", "none");
-                 alert("Thank you");
+                $("#terms-chek").css("visibility", "hidden");
+                $("#overlay .form-control").css("visibility", "hidden");
+
+                 alert("Data sent.");
                 
             })
             .fail(function(e) {
-                alert("incorrect data");                            
+                alert("Incorrect data"); 
+                                     
             });
     }
 }

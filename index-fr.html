@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/animation.css">
     <link rel="stylesheet" type="text/css" href="css/charts.css">
     <link rel="stylesheet" type="text/css" href="css/popup.css">
+     <link rel="stylesheet" type="text/css" href="css/form-paypal.css">
     <link rel="stylesheet" type="text/css" href="css/min-menu.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
@@ -116,17 +117,24 @@
         <section class="front-section ">
             <div class="wallet-fingerText-block">
                 <div class="lang-block">
-                <a href="index.html">EN</a>
-                <a href="index-fr.html">FR</a>
-                <a href="index-ru.html">RU</a> 
-              </div>
-                <span>Adresse de paiement: 0xe07e687dc4b244d574f37490948c7f4aa921d958 <br> <b style="color: yellow;">Our pre-ICO is LIVE!!! </b></span>
+                    <a href="index.html">EN</a>
+                    <a href="index-fr.html">FR</a>
+                    <a href="index-ru.html">RU</a>
+                    <a href="white-paper-fe.pdf" target="_blank">DE</a>
+                </div>
+                  <div class="lang-block-row2">
+                    <a href="white-paper-spa.pdf" target="_blank">ES</a>
+                    <a href="white-paper-hin.pdf" target="_blank">हिन्दी</a>
+                    <a href="white-paper-ch.pdf" target="_blank">中國</a>
+                </div>
+                <span>Adresse de paiement: 0xe07e687dc4b244d574f37490948c7f4aa921d958 <br> <b style="color: yellow;">ICO starts February 1, 2018 at 8 am EST!!! </b></span>
             </div>
             <div class="instruction-wallet">
+                 <img src="img/paypal.png" id='paypal'>
                 <a href="Step-by-step-instructions-to-purchase-Applause-Cash-APLC.pdf" target="_blank"><span>instruction</span></a>
             </div>
             <div class="front-headers limit">
-                <div class="attention animation-element slide-left testimonial"><span class="bold">La prévente dure<span class="headers-orange bold"> jusqu'au 24 janvier 2018, 23h59</span></span>
+                <div class="attention animation-element slide-left testimonial"><span class="bold">La vente commence<span class="headers-orange bold"> le fevrier 1, 2018, 08:00 EST</span></span>
                 </div>
                 <div class="animation-element slide-left testimonial"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>RÉSEAU SOCIAL
                     <br> DE CINÉMAS EN LIGNE</div>
@@ -141,6 +149,42 @@
                     <a href="https://cointelegraph.com/ico-calendar/cinemawellcom" target="_blank"><img src="img/coinTel.png"></a>
                 </div>
             </div>
+              <!--   <div class="popup"> -->
+            <form id="overlay">
+                <div class="form shadow-3">
+                    <img src="img/icon-close.png" alt="close" class="close">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your name" id="name" name="name" required size="45">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" id="email" name="name" required size="45">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ethereum Wallet Address" id="wallet" name="name" required size="45">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Amount" id="amount" name="name" required size="45">
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <span class="term-cond"><a href="http://cinemawell.com/ico/Terms-CinemaWell.com.pdf" target="_blank">Read terms and conditions</a></span>
+                    </div>
+                    <div class="form-group" style="padding-top: 50px; padding-bottom: 30px;" id="terms-chek">
+                        <input type="checkbox" class="custom-check" id="terms" required>
+                        <label for="terms">I accept terms and conditions.</label>
+                    </div>
+                    <!--   pattern="[a-z]{4,40} -->
+                    <button type="submit" id="contact-send2" class="btn btn-primary btn-lg btn-block">Submit & Pay</button>
+                    <br>
+                    <br>
+                    <div id ="button-paypal">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN" id="hidepaypal" target="_blank">
+                              <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" alt="Buy now with PayPal" />
+                              </a>
+                    </div>
+                </div>
+            </form>
+            <!--  </div>
+            </div> -->
         </section>
         <section class="social-video">
             <div class="limit">
@@ -1198,13 +1242,13 @@ tels que <br>House of Cards de Netflix) et marketing
                     <p class="formparagraph1">
                         Please,allow us couple hours due to high load of calls during pre-ICO and ICO.
                     </p>
-                    <div class="name">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required/>
+                     <div class="name">
+                      
+                        <input type="text" id="name" name="name" required placeholder="Name"/>
                     </div>
                     <div class="email">
-                        <label for="email">Phone number</label>
-                        <input type="text" id="email" name="message" />
+                       
+                        <input type="text" id="email" name="message" placeholder="Country code and Phone number" required/>
                     </div>
                     <br>
                     <div style="text-align:left  margin-left: 20px; ">
@@ -1273,6 +1317,8 @@ tels que <br>House of Cards de Netflix) et marketing
     </script>
     <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/call-to-action.js"></script>
+    <script type="text/javascript" src="js/form-paypal.js"></script>
+    <script type="text/javascript" src="js/ajax-form.js"></script>
 </body>
 
 </html>

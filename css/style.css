@@ -98,7 +98,7 @@ nav ul li {
 }
 
 #fingerDesk {
-   /* width: 50px;*/
+    /* width: 50px;*/
     animation: horizontal_3305 2.1s linear infinite;
     transform-origin: 40% 40%;
 }
@@ -106,7 +106,7 @@ nav ul li {
 #fingerDesk-mob {
     position: absolute;
     animation: horizontal_3305 2.1s linear infinite;
-   left: 13%;
+    left: 13%;
     top: 0.43%;
 }
 
@@ -121,6 +121,7 @@ nav ul li {
         transform: translate(0, 0)
     }
 }
+
 
 
 
@@ -624,6 +625,7 @@ nav ul ul ul {
 
 
 
+
 /*** transition image START***/
 
 .transition-team {
@@ -678,6 +680,7 @@ nav ul ul ul {
 
 
 
+
 /*** transition image  END***/
 
 .content-values .headers-content-letter-block {
@@ -716,6 +719,7 @@ nav ul ul ul {
 
 
 
+
 /**contact us logo START**/
 
 .img-servises-festival img {
@@ -739,6 +743,7 @@ ul.servises-ul {
     text-align: center;
     padding-top: 30px;
 }
+
 
 
 
@@ -819,18 +824,20 @@ ul.servises-ul li .img-servises {
     -webkit-box-shadow: 0 0 5px #ffbb00;
     -moz-box-shadow: 0 0 5px #ffbb00;
 }
-.instruction-wallet{
+
+.instruction-wallet {
     padding-top: 20px;
     color: rgb(60, 71, 92);
     text-align: center;
     font-weight: bold;
 }
-.instruction-wallet img{
-   position: relative;
-   top:12px;
-   width: 170px;
-   padding-right: 50px;
-   cursor: pointer;
+
+.instruction-wallet img {
+    position: relative;
+    top: 12px;
+    width: 170px;
+    padding-right: 50px;
+    cursor: pointer;
 }
 
 .instruction-wallet span {
@@ -846,17 +853,17 @@ ul.servises-ul li .img-servises {
     -webkit-box-shadow: 0 0 5px #ffbb00;
     -moz-box-shadow: 0 0 5px #ffbb00;
 }
-.instruction-wallet a{
-  color: rgb(60, 71, 92);
+
+.instruction-wallet a {
+    color: rgb(60, 71, 92);
 }
 
 .instruction-wallet span:hover {
-    
+
     background-color: #3c475c;
     color: #fff;
-  
+
     font-weight: 500;
-   
 }
 
 
@@ -1168,6 +1175,7 @@ ul.servises-ul li .img-servises {
 
 
 
+
 /*карусель*/
 
 .slider {
@@ -1244,6 +1252,7 @@ ul.servises-ul li .img-servises {
 
 
 
+
 /*карусель*/
 
 @media screen and (min-width: 1350px) {
@@ -1305,12 +1314,19 @@ ul.servises-ul li .img-servises {
 }
 
 
-.lang-block{
+.lang-block {
     position: absolute;
     right: 10%;
     top: 70px;
 }
-.lang-block a{
+
+.lang-block-row2 {
+    position: absolute;
+    right: 10%;
+    top: 100px;
+}
+
+.lang-block-row2 a {
     text-decoration: none;
     border: 1px solid #ffbb00;
     padding-right: 5px;
@@ -1318,6 +1334,16 @@ ul.servises-ul li .img-servises {
     border-radius: 5px;
     color: white;
 }
-.lang-block a:hover{
+
+.lang-block a {
+    text-decoration: none;
+    border: 1px solid #ffbb00;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.lang-block a:hover {
     opacity: 0.6;
 }

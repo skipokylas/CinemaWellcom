@@ -5,13 +5,13 @@ function validateEmail(email) {
 }
 
 function closeForm() {
-  document.contactform.name.value = '';
-  document.contactform.email.value = '';
-  document.contactform.message.value = '';
+  // document.contactform.name.value = '';
+  // document.contactform.email.value = '';
+  // document.contactform.message.value = '';
 
-  $('.email').removeClass('typing');
-  $('.name').removeClass('typing');
-  $('.message').removeClass('typing');
+  // $('.email').removeClass('typing');
+  // $('.name').removeClass('typing');
+  // $('.message').removeClass('typing');
 
   $('.cd-popup').removeClass('is-visible');
   $('.notification').addClass('is-visible');
@@ -26,18 +26,18 @@ $(document).ready(function($) {
   $('#contact').on('click', function(event) {
     event.preventDefault();
 
-    $('#contactblurb').html('Questions, suggestions, and general comments are all welcome!');
+    // $('#contactblurb').html('Questions, suggestions, and general comments are all welcome!');
     $('.contact').addClass('is-visible');
 
-    if ($('#name').val().length != 0) {
-      $('.name').addClass('typing');
-    }
-    if ($('#email').val().length != 0) {
-      $('.email').addClass('typing');
-    }
-    if ($('#message').val().length != 0) {
-      $('.message').addClass('typing');
-    }
+    // if ($('#name').val().length != 0) {
+    //   $('.name').addClass('typing');
+    // }
+    // if ($('#email').val().length != 0) {
+    //   $('.email').addClass('typing');
+    // }
+    // if ($('#message').val().length != 0) {
+    //   $('.message').addClass('typing');
+    // }
   });
 
   //close popup when clicking x or off popup
@@ -58,24 +58,24 @@ $(document).ready(function($) {
   /* ------------------- */
   /* Contact Form Labels */
   /* ------------------- */
-  $('#name').keyup(function() {
-    $('.name').addClass('typing');
-    if ($(this).val().length == 0) {
-      $('.name').removeClass('typing');
-    }
-  });
-  $('#email').keyup(function() {
-    $('.email').addClass('typing');
-    if ($(this).val().length == 0) {
-      $('.email').removeClass('typing');
-    }
-  });
-  $('#message').keyup(function() {
-    $('.message').addClass('typing');
-    if ($(this).val().length == 0) {
-      $('.message').removeClass('typing');
-    }
-  });
+  // $('#name').keyup(function() {
+  //   $('.name').addClass('typing');
+  //   if ($(this).val().length == 0) {
+  //     $('.name').removeClass('typing');
+  //   }
+  // });
+  // $('#email').keyup(function() {
+  //   $('.email').addClass('typing');
+  //   if ($(this).val().length == 0) {
+  //     $('.email').removeClass('typing');
+  //   }
+  // });
+  // $('#message').keyup(function() {
+  //   $('.message').addClass('typing');
+  //   if ($(this).val().length == 0) {
+  //     $('.message').removeClass('typing');
+  //   }
+  // });
 
   /* ----------------- */
   /* Handle submission */
