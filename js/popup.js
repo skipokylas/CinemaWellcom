@@ -96,16 +96,16 @@ $(document).ready(function($) {
           //  var googleFormsURL = "https://docs.google.com/forms/d/1dHaFG67d7wwatDtiVNOL98R-FwW1rwdDwdFqqKJggBM3nFB4/formResponse";
             // replace these example entry numbers
            
-            $.ajax({
-              url: "https://formspree.io/skipokylas@gmail.com",
-              method: "POST",
-                data: {
-                    name: $('#name-call-to-action').val(),
-                    email: $('#email-call-to-action').val()
+            // $.ajax({
+            //   url: "https://formspree.io/skipokylas@gmail.com",
+            //   method: "POST",
+            //     data: {
+            //         name: $('#name-call-to-action').val(),
+            //         email: $('#email-call-to-action').val()
                     
-                },
-                dataType: "json"
-            });
+            //     },
+            //     dataType: "json"
+            // });
 
             
             closeForm();
