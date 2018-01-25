@@ -98,11 +98,7 @@ $(document).ready(function($) {
 
           //  var googleFormsURL = "https://docs.google.com/forms/d/1dHaFG67d7wwatDtiVNOL98R-FwW1rwdDwdFqqKJggBM3nFB4/formResponse";
             // replace these example entry numbers
-            var spreadsheetFields = {
-              "entry.212312005": name,
-              "entry.1226278897": email,
-              "entry.1835345325": message
-            }
+           
             $.ajax({
               url: "https://formspree.io/skipokylas@gmail.com",
               method: "POST",
