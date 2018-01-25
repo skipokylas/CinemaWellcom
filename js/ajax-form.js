@@ -1,7 +1,7 @@
 $(function() {
     $("#hidepaypal").css("display", "none");
     $('#overlay button[type=submit]').click(sendForm);
-    $('#contactform input[type=submit]').click(sendFormCallToAction);
+    $('#contactform button[type=submit]').click(sendFormCallToAction);
 })
 
 
@@ -53,32 +53,17 @@ function sendForm(e) {
 
 function sendFormCallToAction(e) {
     e.preventDefault();
-
-    // var check = true;
-    // if ($('#name').val() == '' || $('#email').val() == '' || $('#wallet').val() == '' || $('#amount').val() == '') {
-    //     check = false;
-    //      alert("empty field");
-    // }
-    // if ($('#terms').prop("checked") == false) {
-    //     check = false;
-    //      alert("accept terms and conditions.");
-    // }
-    // if (check) {
-
     $.ajax({
             url: "https://formspree.io/skipokylas@gmail.com",
             method: "POST",
             data: {
                 name: $('#name-call-to-action').val(),
                 email: $('#email-call-to-action').val()
-
             },
             dataType: "json"
         })
         .done(function() {
-
-
-
+            
             alert("Data sent.");
 
         })
@@ -86,5 +71,5 @@ function sendFormCallToAction(e) {
             alert("Incorrect data");
 
         });
-    // }
+    
 }
