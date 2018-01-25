@@ -69,7 +69,7 @@ function sendFormCall(e) {
                 method: "POST",
                 data: {
                     name: $('#CallToname').val(),
-                    email: $('#CallToPhone').val(),
+                    telephone: $('#CallToPhone').val(),
                 },
                 dataType: "json"
             })
