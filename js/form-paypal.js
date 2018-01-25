@@ -4,7 +4,7 @@ $('#paypal').on('click', function(event) {
 
 });
 
-$('.close').on('click', function(event) {
+$('#overlay .close').on('click', function(event) {
    
         $( "#overlay" ).css( "display", "none" );
  
