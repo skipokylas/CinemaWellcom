@@ -1,7 +1,7 @@
 $(function() {
     $("#hidepaypal").css("display", "none");
     $('#overlay button[type=submit]').click(sendForm);
-    $('#ontactform input[type=submit]').click(sendFormCallToAction);
+    $('#contactform input[type=submit]').click(sendFormCallToAction);
 })
 
 
