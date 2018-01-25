@@ -1212,11 +1212,20 @@
             </div>
             <div class="copyright">
                 <span>Copyright 2018 <a href="http://hebronsoft.com/" target="_blank"><b>HebronSoft.</b></a>  All rights reserved</span>
+                <!-- Start of SimpleHitCounter Code -->
+                <!--  <div align="center">
+                    <a href="http://www.simplehitcounter.com" target="_blank">
+                    <img src="http://simplehitcounter.com/hit.php?uid=2333043&f=255&b=16777215" border="0" height="18" width="83" alt="web counter">
+                     </a>
+                    <br>
+                    <a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;"></a>
+                </div> -->
+                <!-- End of SimpleHitCounter Code -->
             </div>
         </section>
         <img class="call-to-action" id="contact" src="img/ph.ico" alt="phone">
         <!-- pop ap window************************************************************************-->
-        <div class="cd-popup contact" role="alert">
+        <div class="cd-popup contact" id="cd-popup" role="alert">
          <form id="contactform" class="contact-form">
                 <div class="cd-popup-container" style="">
                     <p style="">
@@ -1230,17 +1239,14 @@
                     <p class="formparagraph1">
                         Please,allow us couple hours due to high load of calls during pre-ICO and ICO.
                     </p>
-
-                    <input type="text" id="name-call-to-action" name="name" required placeholder="Name"/>
-                    <input type="text" id="email-call-to-action" name="message" placeholder="Country code and Phone number" required/>
-                   <!--  <div class="name">
+                    <div class="name">
                       
-                        <input type="text" id="name-call-to-action" name="name" required placeholder="Name"/>
+                        <input type="text" id="nameCallTo" name="name" required placeholder="Name"/>
                     </div>
                     <div class="email">
                        
-                        <input type="text" id="email-call-to-action" name="message" placeholder="Country code and Phone number" required/>
-                    </div> -->
+                        <input type="text" id="emailCallTo" name="message" placeholder="Country code and Phone number" required/>
+                    </div>
                     <br>
                     <div style="text-align:left  margin-left: 20px; ">
                         <input type="checkbox" id="human" name="human" required/>
@@ -1248,8 +1254,7 @@
                     </div>
                     <br>
                     <div class="submit">
-                      <!--   <input type="submit" name="submit" id="submit" value="Send" /> -->
-                         <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit & Pay</button>
+                        <input type="submit" name="submit" id="submit" value="Send" />
                     </div>
                 </div>
             </form>

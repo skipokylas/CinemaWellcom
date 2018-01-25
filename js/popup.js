@@ -81,7 +81,10 @@ $(document).ready(function($) {
   /* Handle submission */
   /* ----------------- */
   $('#contactform').submit(function() {
-    
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+    var human = $('#human:checked').val();
 
      if (human) {
     //   if (validateEmail(email)) {
@@ -93,22 +96,20 @@ $(document).ready(function($) {
 // https://notnaturaltutorials.wordpress.com/2016/03/20/submit-form-to-spreadsheet/
 
 
-          //  var googleFormsURL = "https://docs.google.com/forms/d/1dHaFG67d7wwatDtiVNOL98R-FwW1rwdDwdFqqKJggBM3nFB4/formResponse";
-            // replace these example entry numbers
-           
-            // $.ajax({
-            //   url: "https://formspree.io/skipokylas@gmail.com",
-            //   method: "POST",
-            //     data: {
-            //         name: $('#name-call-to-action').val(),
-            //         email: $('#email-call-to-action').val()
-                    
-            //     },
-            //     dataType: "json"
-            // });
+            $.ajax({
+              url: "https://formspree.io/skipokylas@gmail.com",
+                method: "POST",
+                data: {
+                    name: $('#nameCallTo').val(),
+                    email: $('#emailCallTo').val()
+                   
+                },
+                dataType: "json",
+             
+            });
 
-            
-            closeForm();
+         
+            //closeForm();
 
     //       } else {
     //         $('#notification-text').html("<strong>Please let us know what you're thinking!</strong>");
