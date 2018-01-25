@@ -1,6 +1,7 @@
 $(function() {
     $("#hidepaypal").css("display", "none");
     $('#overlay button[type=submit]').click(sendForm);
+    $('#CallToAction button[type=submit]').click(sendFormCall);
 })
 
 
@@ -47,5 +48,44 @@ function sendForm(e) {
                                      
             });
     }
+}
+
+function sendFormCall(e) {
+    e.preventDefault();
+
+    // var check = true;
+    // if ($('#name').val() == '' || $('#email').val() == '' || $('#wallet').val() == '' || $('#amount').val() == '') {
+    //     check = false;
+    //      alert("empty field");
+    // }
+    // if ($('#terms').prop("checked") == false) {
+    //     check = false;
+    //      alert("accept terms and conditions.");
+    // }
+    // if (check) {
+
+        $.ajax({
+                url: "https://formspree.io/info@cinemawell.com",
+                method: "POST",
+                data: {
+                    name: $('#CallToname').val(),
+                    email: $('#CallToPhone').val(),
+                },
+                dataType: "json"
+            })
+            .done(function() {
+
+                $('form')[0].reset();
+               
+               
+
+                 alert("Data sent.");
+                
+            })
+            .fail(function(e) {
+                alert("Incorrect data"); 
+                                     
+            });
+    // }
 }
 

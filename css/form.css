@@ -59,7 +59,7 @@
   transition: opacity .6s;
   opacity: 1;
   border: 0;
-  border-bottom: 2px solid #bdc3c7;
+  border-bottom: 1px solid #bdc3c7;
   border-radius: 0;
   background: white;
   font-size: 15px;

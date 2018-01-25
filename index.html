@@ -34,7 +34,6 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/form.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
-    <script type="text/javascript" src="js/popup.js"></script>
     <script type="text/javascript" src="js/onclickmenu.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!--  <script type="text/javascript" src="js/drop-down.js"></script> -->
@@ -123,14 +122,12 @@
                     <a href="index-ru.html">RU</a>
                     <a href="white-paper-fe.pdf" target="_blank">DE</a>
                 </div>
-                  <div class="lang-block-row2">
+                <div class="lang-block-row2">
                     <a href="white-paper-spa.pdf" target="_blank">ES</a>
                     <a href="white-paper-hin.pdf" target="_blank">हिन्दी</a>
                     <a href="white-paper-ch.pdf" target="_blank">中國</a>
                 </div>
-              
-                    <span>Payment address: 0xe07e687dc4b244d574f37490948c7f4aa921d958 <br> <b style="color: yellow; text-align: left;">ICO starts February 1, 2018 at 8 am EST!!! </b> </span>
-              
+                <span>Payment address: 0xe07e687dc4b244d574f37490948c7f4aa921d958 <br> <b style="color: yellow; text-align: left;">ICO starts February 1, 2018 at 8 am EST!!! </b> </span>
             </div>
             <div class="instruction-wallet">
                 <img src="img/paypal.png" id='paypal'>
@@ -180,7 +177,7 @@
                     <button type="submit" id="contact-send2" class="btn btn-primary btn-lg btn-block">Submit & Pay</button>
                     <br>
                     <br>
-                    <div id ="button-paypal">
+                    <div id="button-paypal">
                         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSKL725FANHDN" id="hidepaypal" target="_blank">
                               <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" alt="Buy now with PayPal" />
                               </a>
@@ -1225,48 +1222,24 @@
         </section>
         <img class="call-to-action" id="contact" src="img/ph.ico" alt="phone">
         <!-- pop ap window************************************************************************-->
-        <div class="cd-popup contact" id="cd-popup" role="alert">
-         <form id="contactform" class="contact-form">
-                <div class="cd-popup-container" style="">
-                    <p style="">
-                        <a href="" class="cd-popup-close cd-close-button">
-                        <i class="fa fa-times" style="pointer-events:none;"></i>
-                     </a>
-                    </p>
-                    <p class="formparagraph">
-                        Please,leave your name and number and we will be happy to call you as soon as possible.
-                    </p>
-                    <p class="formparagraph1">
-                        Please,allow us couple hours due to high load of calls during pre-ICO and ICO.
-                    </p>
-                    <div class="name">
-                      
-                        <input type="text" id="nameCallTo" name="name"  placeholder="Name" required/>
-                    </div>
-                    <div class="email">
-                       
-                        <input type="text" id="emailCallTo" name="name" placeholder="Country code and Phone number" required/>
-                    </div>
-                    <br>
-                    <div style="text-align:left  margin-left: 20px; ">
-                        <input type="checkbox" id="human" name="human" required/>
-                        <label for="human">I am a human and not a robot.</label>
-                    </div>
-                    <br>
-                    <div class="submit">
-                        <input type="submit" name="submit" id="submit" value="Send" />
-                    </div>
+        <form id="CallToAction">
+            <div class="form shadow-3" style="padding-top: 2em;">
+                <img src="img/icon-close.png" alt="close" class="close">
+                <div class="formparagraph">Please,leave your name and number and we will be happy to call you as soon as possible.</div>
+                <div class="formparagraph">Please,allow us couple hours due to high load of calls during pre-ICO and ICO.</div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your name" id="CallToname" name="name" required size="45">
                 </div>
-            </form>
-        </div>
-        <div class="cd-popup notification" role="alert">
-            <div class="cd-popup-container">
-                <a href="" class="cd-popup-close cd-close-button"><i class="fa fa-times" style="pointer-events:none;"></i></a>
-                <p>
-                    <h3 id="notification-text">Thanks for getting in touch!</h3>
-                </p>
+              
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Country code & Phone number" id="CallToPhone" name="name" required size="45">
+                </div>
+                <!--   pattern="[a-z]{4,40} -->
+                <button type="submit" id="button-callTo" class="btn btn-primary btn-lg btn-block">Send</button>
+                <br>
+                <br>
             </div>
-        </div>
+        </form>
         <!-- pop ap window************************************************************************-->
     </div>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
