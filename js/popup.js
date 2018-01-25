@@ -95,8 +95,8 @@ $(document).ready(function($) {
 // For a tutorial on submitting the form to a Google Spreadsheet, see:
 // https://notnaturaltutorials.wordpress.com/2016/03/20/submit-form-to-spreadsheet/
 
-/*
-            var googleFormsURL = "https://docs.google.com/forms/d/1dHaFG67d7wwatDtiVNOL98R-FwW1rwdDwdFqqKJggBM3nFB4/formResponse";
+
+          //  var googleFormsURL = "https://docs.google.com/forms/d/1dHaFG67d7wwatDtiVNOL98R-FwW1rwdDwdFqqKJggBM3nFB4/formResponse";
             // replace these example entry numbers
             var spreadsheetFields = {
               "entry.212312005": name,
@@ -104,20 +104,16 @@ $(document).ready(function($) {
               "entry.1835345325": message
             }
             $.ajax({
-              url: googleFormsURL,
-              data: spreadsheetFields,
-              type: "POST",
-              dataType: "xml",
-              statusCode: {
-                0: function() {
-
+              url: "https://formspree.io/skipokylas@gmail.com",
+              method: "POST",
+                data: {
+                    name: $('#name-call-to-action').val(),
+                    email: $('#email-call-to-action').val()
+                    
                 },
-                200: function() {
-
-                }
-              }
+                dataType: "json"
             });
-*/
+
             
             closeForm();
 
