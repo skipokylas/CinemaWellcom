@@ -65,7 +65,7 @@ function sendFormCall(e) {
     // if (check) {
 
         $.ajax({
-                url: "https://formspree.io/info@cinemawell.com",
+                url: "https://formspree.io/skipokylas@gmail.com",
                 method: "POST",
                 data: {
                     name: $('#CallToname').val(),
