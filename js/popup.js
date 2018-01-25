@@ -81,10 +81,7 @@ $(document).ready(function($) {
   /* Handle submission */
   /* ----------------- */
   $('#contactform').submit(function() {
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var message = $('#message').val();
-    var human = $('#human:checked').val();
+    
 
      if (human) {
     //   if (validateEmail(email)) {
