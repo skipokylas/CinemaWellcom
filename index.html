@@ -52,9 +52,9 @@
         });
     });
     // redirect
-    // if  (window.location.href != "http://cinemawell.com/ico/"){
-    //   window.location.href = "http://cinemawell.com/ico/";
-    // }
+    if  (window.location.href != "http://cinemawell.com/ico/"){
+      window.location.href = "http://cinemawell.com/ico/";
+    }
     </script>
     <div class="main-div">
         <nav class="desktopMenu">
@@ -190,9 +190,9 @@
         <section class="social-video">
             <div class="limit">
                 <div class="subscribeBox">
-                    <form action="https://formspree.io/sp@cinemawell.com" method="POST">
-                        <input type="text" name="name" placeholder="   Your email here">
-                        <input type="submit" value="Subscribe">
+                    <form id="subscribe-form">
+                        <input id="subscribe-email" type="text" name="name" placeholder="   Your email here">
+                        <input id="subscribe-submit" type="submit" value="Subscribe">
                     </form>
                 </div>
                 <ul class="servises-ul animation-element slide-left testimonial">
@@ -560,82 +560,7 @@
                     <br>
                     <br>
                 </div>
-                <div class="letter-block animation-element slide-left testimonial">
-                    <div class="letter-block-left">
-                        <div class="headers-content-letter-block">
-                            <span class="middle-headers">Pre ICO</span>
-                            <hr class="headers-hr">
-                            <span class="bold">Offering size</span>
-                            <br>
-                            <span>3,000,000 APLC tokens (1% of all available APLC)<br> 
-                                       to be sold at special Pre-ICO price:<br>
-                                       1st hour: 8 am - 9 am EST January 18, 2018 -- with <span class="bold">90% bonus</span>
-                            <br> Rest of the time of pre-ICO (until January 24) -- with <span class="bold">50% bonus</span></span>
-                        </div>
-                        <div class="mobile-ico-top">
-                            <svg class="top" viewBox="0 0 1360 68">
-                                <polygon class="svg-grey-lite" points="0,-1 1395,-1 0,67">
-                            </svg>
-                            <svg class="bottom" viewBox="0 0 1360 68">
-                                <polygon class="svg-grey" points="-1,3 -1,68 1360,68" />
-                                <polygon class="svg-blue" points="-20,69 1365,0 1365,69">
-                            </svg>
-                            <div class="central">
-                                <span class="middle-headers">Pre ICO</span>
-                                <br>
-                                <span class="bold">Offering size</span>
-                                <br>
-                                <br>
-                                <span>3,000,000 APLC tokens (1% of all available APLC)<br> 
-                                       to be sold at special Pre-ICO price:<br><br>
-                                       1st hour: 8 am - 9 am EST January 18, 2018 -- with <span class="bold">90% bonus</span>
-                                <br>
-                                <br> Rest of the time of pre-ICO (until January 24) -- with <span class="bold">50% bonus</span></span>
-                            </div>
-                        </div>
-                        <div class="mobile-ico-bottom">
-                            <!-- <img src="img/sk.png"> -->
-                            <div class="time-mob">
-                                <img src="svg/time.svg">
-                                <div class="time-text">
-                                    <span class="headers-orange">START:</span><span class="headers-white"> January 18, 2018, 8:00 am EST</span>
-                                    <br>
-                                    <span class="headers-orange">FINISH:</span><span class="headers-white"> January, 24, 2018, 11:59 pm EST</span>
-                                </div>
-                            </div>
-                            <div class="money-mob">
-                                <img src="svg/money.svg">
-                                <div class="money-text">
-                                    <span class="headers-orange"></span><span class="headers-white"></span>
-                                    <br>
-                                    <span class="headers-orange">1 APLC: </span><span class="headers-white"> 0.001 ETH (Ethereum) </span>
-                                    <br>
-                                    <span class="subtext"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="letter-block-right">
-                        <div class="time">
-                            <img src="svg/time.svg">
-                            <div class="time-text">
-                                <span class="headers-orange">START:</span><span class="headers-white"> January 18, 2018, 8:00 am EST&nbsp;&nbsp;</span>
-                                <br>
-                                <span class="headers-orange">FINISH:</span><span class="headers-white"> January 24, 2018, 11:59 pm EST</span>
-                            </div>
-                        </div>
-                        <div class="money">
-                            <img src="svg/money.svg">
-                            <div class="money-text">
-                                <span class="headers-orange"></span><span class="headers-white"></span>
-                                <br>
-                                <span class="headers-orange">1 APLC: </span><span class="headers-white"> 0.001 ETH (Ethereum) </span>
-                                <br>
-                                <span class="subtext"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
                 <div class="letter-block animation-element slide-left testimonial">
                     <div class="letter-block-left">
                         <div class="headers-content-letter-block">
@@ -744,11 +669,11 @@
             <!--  MOBILE BLOCK -->
             <article class="showTokenMobile ">
                 <h1 class="blockName">Token Distribution</h1>
-                <p class="spesialOfer">
+               <!--  <p class="spesialOfer">
                     <span class="boldOfer">SPECIAL OFFER</span> for <span class="boldOfer">EARLY</span> Investors, please, email:
                     <br>
                     <span class="mailOfer">Investor@cinemawell.com</span>
-                </p>
+                </p> -->
                 <div class="showTokenBlock animation-element slide-left testimonial">
                     <div class="boxTokenBlockOne ">
                         <div class="circleTokenImg">

@@ -117,11 +117,11 @@
     @media screen and (max-width: 1150px) {
         .lang-block {
             position: absolute;
-            right: 30%;
+            right: 20%;
             top: 10px;
         }
         .lang-block-row2 {
-            right: 30%;
+            right: 20%;
             top: 40px;
         }
 

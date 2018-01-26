@@ -2,6 +2,7 @@ $(function() {
     $("#hidepaypal").css("display", "none");
     $('#overlay button[type=submit]').click(sendForm);
     $('#CallToAction button[type=submit]').click(sendFormCall);
+    $('#subscribe-form input[type=submit]').click(sendFormSubscribe);
 })
 
 
@@ -54,7 +55,7 @@ function sendFormCall(e) {
     e.preventDefault();
 
         $.ajax({
-                url: "https://formspree.io/skipokylas@gmail.com",
+                url: "https://formspree.io/info@cinemawell.com",
                 method: "POST",
                 data: {
                     name: $('#CallToname').val(),
@@ -74,6 +75,27 @@ function sendFormCall(e) {
                 alert("Incorrect data"); 
                                      
             });
-    // }
 }
+
+function sendFormSubscribe(e) {
+    e.preventDefault();
+
+        $.ajax({
+                url: "https://formspree.io/skipokylas@gmail.com",
+                method: "POST",
+                data: {
+                    email: $('#subscribe-email').val()                  
+                },
+                dataType: "json"
+            })
+            .done(function() {
+
+                $('#subscribe-form').reset();              
+                 alert("Data sent.");                
+            })
+            .fail(function(e) {
+                alert("Incorrect data");                                     
+            });
+}
+
 
