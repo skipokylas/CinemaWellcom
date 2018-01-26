@@ -90,7 +90,7 @@ function sendFormSubscribe(e) {
             })
             .done(function() {
 
-                $('#subscribe-form').reset();              
+                $('#subscribe-form').value()="";              
                  alert("Data sent.");                
             })
             .fail(function(e) {
