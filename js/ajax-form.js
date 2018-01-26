@@ -90,7 +90,8 @@ function sendFormSubscribe(e) {
             })
             .done(function() {
 
-                document.querySelector('#subscribe-email').value = '';             
+                 // document.querySelector('#subscribe-email').value = '';
+                 $('#subscribe-email').value = '';         
                  alert("Data sent.");                
             })
             .fail(function(e) {
