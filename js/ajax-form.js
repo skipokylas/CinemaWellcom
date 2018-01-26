@@ -13,11 +13,11 @@ function sendForm(e) {
     var check = true;
     if ($('#name').val() == '' || $('#email').val() == '' || $('#wallet').val() == '' || $('#amount').val() == '') {
         check = false;
-         alert("empty field");
+        alert("empty field");
     }
     if ($('#terms').prop("checked") == false) {
         check = false;
-         alert("accept terms and conditions.");
+        alert("accept terms and conditions.");
     }
     if (check) {
 
@@ -35,18 +35,23 @@ function sendForm(e) {
             .done(function() {
 
                 $('form')[0].reset();
-               
+
                 $("#hidepaypal").css("display", "block");
                 $("#contact-send2").css("display", "none");
                 $("#terms-chek").css("visibility", "hidden");
                 $("#overlay .form-control").css("visibility", "hidden");
-
-                 alert("Data sent.");
                 
+                 $('#name').val("");
+                 $('#email').val("");
+                 $('#wallet').val("");
+                 $('#amount').val("");
+                 
+                alert("Data sent.");
+
             })
             .fail(function(e) {
-                alert("Incorrect data"); 
-                                     
+                alert("Incorrect data");
+
             });
     }
 }
@@ -54,49 +59,47 @@ function sendForm(e) {
 function sendFormCall(e) {
     e.preventDefault();
 
-        $.ajax({
-                url: "https://formspree.io/info@cinemawell.com",
-                method: "POST",
-                data: {
-                    name: $('#CallToname').val(),
-                    telephone: $('#CallToPhone').val(),
-                },
-                dataType: "json"
-            })
-            .done(function() {
+    $.ajax({
+            url: "https://formspree.io/info@cinemawell.com",
+            method: "POST",
+            data: {
+                name: $('#CallToname').val(),
+                telephone: $('#CallToPhone').val(),
+            },
+            dataType: "json"
+        })
+        .done(function() {
 
-                $('form')[0].reset();
-                $( "#CallToAction" ).css( "display", "none" );
-                 alert("Data sent.");
+            $("#CallToAction").css("display", "none");
+            $('#CallToname').val("");
+            $('#CallToPhone').val("");
+            alert("Data sent.");
 
-                
-            })
-            .fail(function(e) {
-                alert("Incorrect data"); 
-                                     
-            });
+
+        })
+        .fail(function(e) {
+            alert("Incorrect data");
+
+        });
 }
 
 function sendFormSubscribe(e) {
     e.preventDefault();
 
-        $.ajax({
-                url: "https://formspree.io/skipokylas@gmail.com",
-                method: "POST",
-                data: {
-                    email: $('#subscribe-email').val()                  
-                },
-                dataType: "json"
-            })
-            .done(function() {
+    $.ajax({
+            url: "https://formspree.io/skipokylas@gmail.com",
+            method: "POST",
+            data: {
+                email: $('#subscribe-email').val()
+            },
+            dataType: "json"
+        })
+        .done(function() {
 
-                 // document.querySelector('#subscribe-email').value = '';
-                 $('#subscribe-email').value = '';         
-                 alert("Data sent.");                
-            })
-            .fail(function(e) {
-                alert("Incorrect data");                                     
-            });
+            $('#subscribe-email').val("");
+            alert("Data sent.");
+        })
+        .fail(function(e) {
+            alert("Incorrect data");
+        });
 }
-
-
