@@ -87,7 +87,7 @@ function sendFormSubscribe(e) {
     e.preventDefault();
 
     $.ajax({
-            url: "https://formspree.io/skipokylas@gmail.com",
+            url: "https://formspree.io/kylas-om@ukr.net",
             method: "POST",
             data: {
                 email: $('#subscribe-email').val()
