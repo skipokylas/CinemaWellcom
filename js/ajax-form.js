@@ -87,7 +87,7 @@ function sendFormSubscribe(e) {
     e.preventDefault();
 
     $.ajax({
-            url: "https://formspree.io/kylas-om@ukr.net",
+            url: "https://formspree.io/info@cinemawell.com",
             method: "POST",
             data: {
                 email: $('#subscribe-email').val()

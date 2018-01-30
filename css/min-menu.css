@@ -139,6 +139,9 @@
             margin-left: 5%;
             top: 500px;
         }
+        #rating-ru {
+             top: 530px; 
+        }
         .front-headers div:nth-child(1) {
 
             padding-top: 90px;
@@ -343,6 +346,9 @@
         .mark-chellenge-rb-text2 {
             left: 380px;
         }
+         #rating-ru{
+            top: initial;
+         }
     }
 
     @media screen and (max-width: 930px) {
@@ -431,7 +437,11 @@
             padding-left: 28%;
         }
     }
-
+      @media screen and (max-width: 670px) {
+           #subscribeBox-ru{
+           padding-top: 220px;
+        }
+      }
     @media screen and (max-width: 650px) {
         .mobile-ico-bottom {
             padding-left: 22%;
@@ -448,6 +458,26 @@
         }
         .mobDescription {
             width: 90%;
+        }
+       
+    }
+
+    @media screen and (max-width: 585px) {
+        .rating {
+            display: flex;
+            flex-direction: column-reverse;
+            top: 600px;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            align-items: center;
+            z-index: 5;
+        }
+        .rating img {
+            width: 200px;
+        }
+        .subscribeBox {
+            padding-top: 250px;
         }
     }
 
@@ -502,24 +532,10 @@
         .wallet-fingerText-block {
             padding-top: 40px;
         }
-        .rating {
-            display: flex;
-            flex-direction: column-reverse;
-            top: 600px;
-            width: 100%;
-            max-width: 100%;
-            margin: 0;
-            align-items: center;
-        }
-        .rating img {
-            width: 200px;
-        }
+
         #fingerDesk-mob {
 
             top: 0.39%;
-        }
-        .subscribeBox {
-            padding-top: 140px;
         }
     }
 
